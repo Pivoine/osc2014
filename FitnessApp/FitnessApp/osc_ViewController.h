@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
+
+
 
 @interface osc_ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *StepsChange;
 
 @property (strong, nonatomic) IBOutlet UILabel *LabelChange;
+
+@property (strong, nonatomic) CMMotionManager *motionManager;
 
 @end

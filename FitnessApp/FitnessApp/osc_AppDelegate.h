@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
 
-@interface osc_AppDelegate : UIResponder <UIApplicationDelegate>
+@interface osc_AppDelegate : UIResponder <UIApplicationDelegate>{
+
+    CMMotionManager *motionManager;
+}
+
+@property (readonly) CMMotionManager *motionManager;
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) UIViewController *viewController;
 
 @end
