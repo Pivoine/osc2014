@@ -10,4 +10,7 @@
 
 @interface osc_ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *LabelChange;
+
+
 @end
