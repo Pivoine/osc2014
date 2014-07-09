@@ -8,6 +8,7 @@
 
 #import "osc_ViewController.h"
 #import "osc_Toast.h"
+#import <Parse/Parse.h>
 
 @interface osc_ViewController ()
 
@@ -67,7 +68,7 @@ float alpha = 0.8;
                                              }];
 
     
-
+  
     
     
 }
