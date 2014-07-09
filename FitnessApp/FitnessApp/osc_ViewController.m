@@ -15,6 +15,13 @@
 @implementation osc_ViewController
 int i = 0;
 
+float gravityX = 0;
+float gravityY = 0;
+float gravityZ = 0;
+
+float alpha = 0.8;
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -28,6 +35,7 @@ int i = 0;
     
     
     //Accelerometer
+
     self.motionManager = [[CMMotionManager alloc] init];
     self.motionManager.accelerometerUpdateInterval = .2;
     self.motionManager.gyroUpdateInterval = .2;
@@ -40,12 +48,9 @@ int i = 0;
                                                      NSLog(@"%@", error);
                                                  }
                                              }];
+
     
-    [self.motionManager startGyroUpdatesToQueue:[NSOperationQueue currentQueue]
-                                    withHandler:^(CMGyroData *gyroData, NSError *error) {
-                                        [self outputRotationData:gyroData.rotationRate];
-                                    }];
-    
+
     
     
 }
@@ -53,50 +58,24 @@ int i = 0;
 //************
 -(void)outputAccelertionData:(CMAcceleration)acceleration
 {
+
     
-    self.StepsChange.text = [NSString stringWithFormat:@" %.2fg",acceleration.x];
+    self.accX.text = [NSString stringWithFormat:@" %.2fg",acceleration.x];
+    self.accY.text = [NSString stringWithFormat:@" %.2fg",acceleration.y];
+    self.accZ.text = [NSString stringWithFormat:@" %.2fg",acceleration.z];
     
+    gravityX = alpha * gravityX + (1 - alpha) * acceleration.x;
+    gravityY = alpha * gravityY + (1 - alpha) * acceleration.y;
+    gravityZ = alpha * gravityZ + (1 - alpha) * acceleration.z;
     
-//    self.accX.text = [NSString stringWithFormat:@" %.2fg",acceleration.x];
-//    if(fabs(acceleration.x) > fabs(currentMaxAccelX))
-//    {
-//        currentMaxAccelX = acceleration.x;
-//    }
-//    self.accY.text = [NSString stringWithFormat:@" %.2fg",acceleration.y];
-//    if(fabs(acceleration.y) > fabs(currentMaxAccelY))
-//    {
-//        currentMaxAccelY = acceleration.y;
-//    }
-//    self.accZ.text = [NSString stringWithFormat:@" %.2fg",acceleration.z];
-//    if(fabs(acceleration.z) > fabs(currentMaxAccelZ))
-//    {
-//        currentMaxAccelZ = acceleration.z;
-//    }
-//    
-//    self.maxAccX.text = [NSString stringWithFormat:@" %.2f",currentMaxAccelX];
-//    self.maxAccY.text = [NSString stringWithFormat:@" %.2f",currentMaxAccelY];
-//    self.maxAccZ.text = [NSString stringWithFormat:@" %.2f",currentMaxAccelZ];
+    self.gravX.text = [NSString stringWithFormat:@" %.2fg",gravityX];
+    self.gravY.text = [NSString stringWithFormat:@" %.2fg",gravityY];
+    self.gravZ.text = [NSString stringWithFormat:@" %.2fg",gravityZ];
+
+    
     
     
 }
--(void)outputRotationData:(CMRotationRate)rotation
-{
-    
-//    self.rotX.text = [NSString stringWithFormat:@" %.2fr/s",rotation.x];
-//    if(fabs(rotation.x) > fabs(currentMaxRotX))
-//    {
-//        currentMaxRotX = rotation.x;
-//    }
-//    self.rotY.text = [NSString stringWithFormat:@" %.2fr/s",rotation.y];
-//    if(fabs(rotation.y) > fabs(currentMaxRotY))
-//    {
-//        currentMaxRotY = rotation.y;
-//    }
-//    self.rotZ.text = [NSString stringWithFormat:@" %.2fr/s",rotation.z];
-//    if(fabs(rotation.z) > fabs(currentMaxRotZ))
-//    {
-//        currentMaxRotZ = rotation.z;
-    }
 
 //************
 

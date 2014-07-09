@@ -13,6 +13,17 @@
 
 @interface osc_ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *accX;
+@property (strong, nonatomic) IBOutlet UILabel *accY;
+@property (strong, nonatomic) IBOutlet UILabel *accZ;
+
+@property (strong, nonatomic) IBOutlet UILabel *gravX;
+@property (strong, nonatomic) IBOutlet UILabel *gravY;
+@property (strong, nonatomic) IBOutlet UILabel *gravZ;
+
+
+
+
 @property (strong, nonatomic) IBOutlet UILabel *StepsChange;
 
 @property (strong, nonatomic) IBOutlet UILabel *LabelChange;
