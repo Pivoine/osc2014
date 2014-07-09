@@ -7,6 +7,7 @@
 //
 
 #import "osc_ViewController.h"
+#import "osc_Toast.h"
 
 @interface osc_ViewController ()
 
@@ -20,6 +21,14 @@ float gravityY = 0;
 float gravityZ = 0;
 
 float alpha = 0.8;
+
+@synthesize accX;
+@synthesize accY;
+@synthesize accZ;
+
+@synthesize gravX;
+@synthesize gravY;
+@synthesize gravZ;
 
 
 - (void)viewDidLoad
@@ -37,8 +46,16 @@ float alpha = 0.8;
     //Accelerometer
 
     self.motionManager = [[CMMotionManager alloc] init];
-    self.motionManager.accelerometerUpdateInterval = .2;
-    self.motionManager.gyroUpdateInterval = .2;
+    
+    if (!self.motionManager.isDeviceMotionAvailable) {
+         [osc_Toast showToastInParentView:self.view withText:@"Device Motion unavailable" withDuaration:5.0];
+    
+    }
+    self.motionManager.deviceMotionUpdateInterval = 0.5;
+    self.motionManager.accelerometerUpdateInterval = 0.5;
+    
+    [self.motionManager startDeviceMotionUpdatesUsingReferenceFrame: CMAttitudeReferenceFrameXArbitraryCorrectedZVertical];
+   
     
     [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue]
                                              withHandler:^(CMAccelerometerData  *accelerometerData, NSError *error) {
@@ -60,17 +77,17 @@ float alpha = 0.8;
 {
 
     
-    self.accX.text = [NSString stringWithFormat:@" %.2fg",acceleration.x];
-    self.accY.text = [NSString stringWithFormat:@" %.2fg",acceleration.y];
-    self.accZ.text = [NSString stringWithFormat:@" %.2fg",acceleration.z];
+    self.accX.text = [NSString stringWithFormat:@" %.20f",acceleration.x];
+    self.accY.text = [NSString stringWithFormat:@" %.20f",acceleration.y];
+    self.accZ.text = [NSString stringWithFormat:@" %.20f",acceleration.z];
     
     gravityX = alpha * gravityX + (1 - alpha) * acceleration.x;
     gravityY = alpha * gravityY + (1 - alpha) * acceleration.y;
     gravityZ = alpha * gravityZ + (1 - alpha) * acceleration.z;
     
-    self.gravX.text = [NSString stringWithFormat:@" %.2fg",gravityX];
-    self.gravY.text = [NSString stringWithFormat:@" %.2fg",gravityY];
-    self.gravZ.text = [NSString stringWithFormat:@" %.2fg",gravityZ];
+    self.gravX.text = [NSString stringWithFormat:@" %.20f",gravityX];
+    self.gravY.text = [NSString stringWithFormat:@" %.20f",gravityY];
+    self.gravZ.text = [NSString stringWithFormat:@" %.20f",gravityZ];
 
     
     

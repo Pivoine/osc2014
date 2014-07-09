@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1076A80F196D425500499040 /* osc_Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1076A80E196D425500499040 /* osc_Toast.m */; };
 		10FFDD8D196BE831009EEA87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FFDD8C196BE831009EEA87 /* Foundation.framework */; };
 		10FFDD8F196BE831009EEA87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FFDD8E196BE831009EEA87 /* CoreGraphics.framework */; };
 		10FFDD91196BE831009EEA87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FFDD90196BE831009EEA87 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1076A80D196D425500499040 /* osc_Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osc_Toast.h; sourceTree = "<group>"; };
+		1076A80E196D425500499040 /* osc_Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = osc_Toast.m; sourceTree = "<group>"; };
 		10FFDD89196BE831009EEA87 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FFDD8C196BE831009EEA87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10FFDD8E196BE831009EEA87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1076A809196D414E00499040 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1076A80D196D425500499040 /* osc_Toast.h */,
+				1076A80E196D425500499040 /* osc_Toast.m */,
+			);
+			name = utilities;
+			sourceTree = "<group>";
+		};
 		10FFDD80196BE831009EEA87 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +128,7 @@
 		10FFDD92196BE831009EEA87 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				1076A809196D414E00499040 /* utilities */,
 				10FFDD9B196BE831009EEA87 /* osc_AppDelegate.h */,
 				10FFDD9C196BE831009EEA87 /* osc_AppDelegate.m */,
 				10FFDD9E196BE831009EEA87 /* Main.storyboard */,
@@ -255,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FFDD9D196BE831009EEA87 /* osc_AppDelegate.m in Sources */,
+				1076A80F196D425500499040 /* osc_Toast.m in Sources */,
 				10FFDDA3196BE831009EEA87 /* osc_ViewController.m in Sources */,
 				10FFDD99196BE831009EEA87 /* main.m in Sources */,
 			);
@@ -461,6 +475,7 @@
 				10FFDDBD196BE831009EEA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10FFDDBE196BE831009EEA87 /* Build configuration list for PBXNativeTarget "FitnessAppTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +484,7 @@
 				10FFDDC0196BE831009EEA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
