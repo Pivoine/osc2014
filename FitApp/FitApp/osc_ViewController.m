@@ -7,6 +7,10 @@
 //
 
 #import "osc_ViewController.h"
+#import "OSC_IUserManager.h"
+#import <Parse/Parse.h>
+
+
 
 @interface osc_ViewController ()
 
@@ -14,10 +18,23 @@
 
 @implementation osc_ViewController
 
+@synthesize usermanager;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //PFUser *u = [[PFUser alloc] init];
+    
+//    u = [self.usermanager getUserByIdWithUserId:(@"2jf46mQXop")];
+//    NSString *a = u.email;
+//    
+//    NSLog(@"%@", a);
+    
+    
+    
+  
 }
 
 - (void)didReceiveMemoryWarning

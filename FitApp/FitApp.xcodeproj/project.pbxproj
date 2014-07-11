@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		108F3D6D196FC4DB0087DEF8 /* OSC_Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D6C196FC4DB0087DEF8 /* OSC_Error.m */; };
+		108F3D71196FD1AD0087DEF8 /* OSC_PlanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D70196FD1AD0087DEF8 /* OSC_PlanManager.m */; };
+		108F3D75196FE2370087DEF8 /* OSC_ActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D74196FE2370087DEF8 /* OSC_ActivityManager.m */; };
+		108F3D79197004C10087DEF8 /* OSC_Abs.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D78197004C10087DEF8 /* OSC_Abs.m */; };
+		108F3D7C197007A10087DEF8 /* OSC_Biceps.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D7B197007A10087DEF8 /* OSC_Biceps.m */; };
+		108F3D7F19700AAD0087DEF8 /* OSC_Cycling.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D7E19700AAD0087DEF8 /* OSC_Cycling.m */; };
+		108F3D8219700DBF0087DEF8 /* OSC_Footing.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D8119700DBF0087DEF8 /* OSC_Footing.m */; };
+		108F3D8519700F690087DEF8 /* OSC_Pullups.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D8419700F690087DEF8 /* OSC_Pullups.m */; };
+		108F3D88197011B90087DEF8 /* OSC_Pushups.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D87197011B90087DEF8 /* OSC_Pushups.m */; };
+		108F3D8B197012310087DEF8 /* OSC_SkippingRope.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D8A197012310087DEF8 /* OSC_SkippingRope.m */; };
+		108F3D8F197015A90087DEF8 /* OSC_StatisticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D8E197015A90087DEF8 /* OSC_StatisticsManager.m */; };
 		10A85E60196E75B00066BF34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85E5F196E75B00066BF34 /* Foundation.framework */; };
 		10A85E62196E75B00066BF34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85E61196E75B00066BF34 /* CoreGraphics.framework */; };
 		10A85E64196E75B00066BF34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85E63196E75B00066BF34 /* UIKit.framework */; };
@@ -21,6 +32,20 @@
 		10A85E81196E75B00066BF34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85E63196E75B00066BF34 /* UIKit.framework */; };
 		10A85E89196E75B00066BF34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10A85E87196E75B00066BF34 /* InfoPlist.strings */; };
 		10A85E8B196E75B00066BF34 /* FitAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A85E8A196E75B00066BF34 /* FitAppTests.m */; };
+		10A85E9B196E804F0066BF34 /* OSC_User.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A85E9A196E804F0066BF34 /* OSC_User.m */; };
+		10A85E9E196E889C0066BF34 /* OSC_Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A85E9D196E889C0066BF34 /* OSC_Plan.m */; };
+		10A85EA4196E93B50066BF34 /* OSC_Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A85EA3196E93B50066BF34 /* OSC_Statistics.m */; };
+		10A85EF9196EA20C0066BF34 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85EF8196EA20C0066BF34 /* Parse.framework */; };
+		10A85F03196EA28D0066BF34 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85EFA196EA28D0066BF34 /* AudioToolbox.framework */; };
+		10A85F04196EA28D0066BF34 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85EFB196EA28D0066BF34 /* CFNetwork.framework */; };
+		10A85F05196EA28D0066BF34 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85EFC196EA28D0066BF34 /* CoreLocation.framework */; };
+		10A85F06196EA28D0066BF34 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85EFD196EA28D0066BF34 /* libz.dylib */; };
+		10A85F07196EA28D0066BF34 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85EFE196EA28D0066BF34 /* MobileCoreServices.framework */; };
+		10A85F08196EA28D0066BF34 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85EFF196EA28D0066BF34 /* QuartzCore.framework */; };
+		10A85F09196EA28D0066BF34 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85F00196EA28D0066BF34 /* Security.framework */; };
+		10A85F0A196EA28D0066BF34 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85F01196EA28D0066BF34 /* StoreKit.framework */; };
+		10A85F0B196EA28D0066BF34 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85F02196EA28D0066BF34 /* SystemConfiguration.framework */; };
+		10A85F0E196EB2120066BF34 /* OSC_UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A85F0D196EB2120066BF34 /* OSC_UserManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +59,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		108F3D6B196FC4DB0087DEF8 /* OSC_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Error.h; sourceTree = "<group>"; };
+		108F3D6C196FC4DB0087DEF8 /* OSC_Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Error.m; sourceTree = "<group>"; };
+		108F3D6E196FD0940087DEF8 /* OSC_IPlanManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSC_IPlanManager.h; sourceTree = "<group>"; };
+		108F3D6F196FD1AD0087DEF8 /* OSC_PlanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_PlanManager.h; sourceTree = "<group>"; };
+		108F3D70196FD1AD0087DEF8 /* OSC_PlanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_PlanManager.m; sourceTree = "<group>"; };
+		108F3D72196FE18F0087DEF8 /* OSC_IActivityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSC_IActivityManager.h; sourceTree = "<group>"; };
+		108F3D73196FE2370087DEF8 /* OSC_ActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_ActivityManager.h; sourceTree = "<group>"; };
+		108F3D74196FE2370087DEF8 /* OSC_ActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_ActivityManager.m; sourceTree = "<group>"; };
+		108F3D77197004C10087DEF8 /* OSC_Abs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Abs.h; sourceTree = "<group>"; };
+		108F3D78197004C10087DEF8 /* OSC_Abs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Abs.m; sourceTree = "<group>"; };
+		108F3D7A197007A10087DEF8 /* OSC_Biceps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Biceps.h; sourceTree = "<group>"; };
+		108F3D7B197007A10087DEF8 /* OSC_Biceps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Biceps.m; sourceTree = "<group>"; };
+		108F3D7D19700AAD0087DEF8 /* OSC_Cycling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Cycling.h; sourceTree = "<group>"; };
+		108F3D7E19700AAD0087DEF8 /* OSC_Cycling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Cycling.m; sourceTree = "<group>"; };
+		108F3D8019700DBF0087DEF8 /* OSC_Footing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Footing.h; sourceTree = "<group>"; };
+		108F3D8119700DBF0087DEF8 /* OSC_Footing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Footing.m; sourceTree = "<group>"; };
+		108F3D8319700F690087DEF8 /* OSC_Pullups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Pullups.h; sourceTree = "<group>"; };
+		108F3D8419700F690087DEF8 /* OSC_Pullups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Pullups.m; sourceTree = "<group>"; };
+		108F3D86197011B90087DEF8 /* OSC_Pushups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Pushups.h; sourceTree = "<group>"; };
+		108F3D87197011B90087DEF8 /* OSC_Pushups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Pushups.m; sourceTree = "<group>"; };
+		108F3D89197012310087DEF8 /* OSC_SkippingRope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_SkippingRope.h; sourceTree = "<group>"; };
+		108F3D8A197012310087DEF8 /* OSC_SkippingRope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_SkippingRope.m; sourceTree = "<group>"; };
+		108F3D8C197014EB0087DEF8 /* OSC_IStatisticsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSC_IStatisticsManager.h; sourceTree = "<group>"; };
+		108F3D8D197015A90087DEF8 /* OSC_StatisticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_StatisticsManager.h; sourceTree = "<group>"; };
+		108F3D8E197015A90087DEF8 /* OSC_StatisticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_StatisticsManager.m; sourceTree = "<group>"; };
 		10A85E5C196E75B00066BF34 /* FitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A85E5F196E75B00066BF34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10A85E61196E75B00066BF34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +103,25 @@
 		10A85E86196E75B00066BF34 /* FitAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FitAppTests-Info.plist"; sourceTree = "<group>"; };
 		10A85E88196E75B00066BF34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		10A85E8A196E75B00066BF34 /* FitAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitAppTests.m; sourceTree = "<group>"; };
+		10A85E97196E7A090066BF34 /* OSC_IUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_IUserManager.h; sourceTree = SOURCE_ROOT; };
+		10A85E99196E804F0066BF34 /* OSC_User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_User.h; sourceTree = "<group>"; };
+		10A85E9A196E804F0066BF34 /* OSC_User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_User.m; sourceTree = "<group>"; };
+		10A85E9C196E889C0066BF34 /* OSC_Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Plan.h; sourceTree = "<group>"; };
+		10A85E9D196E889C0066BF34 /* OSC_Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Plan.m; sourceTree = "<group>"; };
+		10A85EA2196E93B50066BF34 /* OSC_Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Statistics.h; sourceTree = "<group>"; };
+		10A85EA3196E93B50066BF34 /* OSC_Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Statistics.m; sourceTree = "<group>"; };
+		10A85EF8196EA20C0066BF34 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		10A85EFA196EA28D0066BF34 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		10A85EFB196EA28D0066BF34 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		10A85EFC196EA28D0066BF34 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		10A85EFD196EA28D0066BF34 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		10A85EFE196EA28D0066BF34 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		10A85EFF196EA28D0066BF34 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		10A85F00196EA28D0066BF34 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		10A85F01196EA28D0066BF34 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		10A85F02196EA28D0066BF34 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		10A85F0C196EB2120066BF34 /* OSC_UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_UserManager.h; sourceTree = "<group>"; };
+		10A85F0D196EB2120066BF34 /* OSC_UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_UserManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +129,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A85F03196EA28D0066BF34 /* AudioToolbox.framework in Frameworks */,
+				10A85F04196EA28D0066BF34 /* CFNetwork.framework in Frameworks */,
+				10A85F05196EA28D0066BF34 /* CoreLocation.framework in Frameworks */,
+				10A85F06196EA28D0066BF34 /* libz.dylib in Frameworks */,
+				10A85F07196EA28D0066BF34 /* MobileCoreServices.framework in Frameworks */,
+				10A85F08196EA28D0066BF34 /* QuartzCore.framework in Frameworks */,
+				10A85F09196EA28D0066BF34 /* Security.framework in Frameworks */,
+				10A85F0A196EA28D0066BF34 /* StoreKit.framework in Frameworks */,
+				10A85F0B196EA28D0066BF34 /* SystemConfiguration.framework in Frameworks */,
 				10A85E62196E75B00066BF34 /* CoreGraphics.framework in Frameworks */,
 				10A85E64196E75B00066BF34 /* UIKit.framework in Frameworks */,
+				10A85EF9196EA20C0066BF34 /* Parse.framework in Frameworks */,
 				10A85E60196E75B00066BF34 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		108F3D6A196FC4BE0087DEF8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				108F3D6B196FC4DB0087DEF8 /* OSC_Error.h */,
+				108F3D6C196FC4DB0087DEF8 /* OSC_Error.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		10A85E53196E75B00066BF34 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +189,16 @@
 		10A85E5E196E75B00066BF34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10A85EFA196EA28D0066BF34 /* AudioToolbox.framework */,
+				10A85EFB196EA28D0066BF34 /* CFNetwork.framework */,
+				10A85EFC196EA28D0066BF34 /* CoreLocation.framework */,
+				10A85EFD196EA28D0066BF34 /* libz.dylib */,
+				10A85EFE196EA28D0066BF34 /* MobileCoreServices.framework */,
+				10A85EFF196EA28D0066BF34 /* QuartzCore.framework */,
+				10A85F00196EA28D0066BF34 /* Security.framework */,
+				10A85F01196EA28D0066BF34 /* StoreKit.framework */,
+				10A85F02196EA28D0066BF34 /* SystemConfiguration.framework */,
+				10A85EF8196EA20C0066BF34 /* Parse.framework */,
 				10A85E5F196E75B00066BF34 /* Foundation.framework */,
 				10A85E61196E75B00066BF34 /* CoreGraphics.framework */,
 				10A85E63196E75B00066BF34 /* UIKit.framework */,
@@ -112,6 +210,10 @@
 		10A85E65196E75B00066BF34 /* FitApp */ = {
 			isa = PBXGroup;
 			children = (
+				108F3D6A196FC4BE0087DEF8 /* Utilities */,
+				10A85E98196E7F7C0066BF34 /* Model */,
+				10A85E95196E76180066BF34 /* DAO */,
+				10A85E94196E76070066BF34 /* Services */,
 				10A85E6E196E75B00066BF34 /* osc_AppDelegate.h */,
 				10A85E6F196E75B00066BF34 /* osc_AppDelegate.m */,
 				10A85E71196E75B00066BF34 /* Main.storyboard */,
@@ -150,6 +252,59 @@
 				10A85E87196E75B00066BF34 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10A85E94196E76070066BF34 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		10A85E95196E76180066BF34 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				10A85E97196E7A090066BF34 /* OSC_IUserManager.h */,
+				10A85F0C196EB2120066BF34 /* OSC_UserManager.h */,
+				10A85F0D196EB2120066BF34 /* OSC_UserManager.m */,
+				108F3D6E196FD0940087DEF8 /* OSC_IPlanManager.h */,
+				108F3D6F196FD1AD0087DEF8 /* OSC_PlanManager.h */,
+				108F3D70196FD1AD0087DEF8 /* OSC_PlanManager.m */,
+				108F3D72196FE18F0087DEF8 /* OSC_IActivityManager.h */,
+				108F3D73196FE2370087DEF8 /* OSC_ActivityManager.h */,
+				108F3D74196FE2370087DEF8 /* OSC_ActivityManager.m */,
+				108F3D8C197014EB0087DEF8 /* OSC_IStatisticsManager.h */,
+				108F3D8D197015A90087DEF8 /* OSC_StatisticsManager.h */,
+				108F3D8E197015A90087DEF8 /* OSC_StatisticsManager.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		10A85E98196E7F7C0066BF34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10A85E99196E804F0066BF34 /* OSC_User.h */,
+				10A85E9A196E804F0066BF34 /* OSC_User.m */,
+				10A85E9C196E889C0066BF34 /* OSC_Plan.h */,
+				10A85E9D196E889C0066BF34 /* OSC_Plan.m */,
+				10A85EA2196E93B50066BF34 /* OSC_Statistics.h */,
+				10A85EA3196E93B50066BF34 /* OSC_Statistics.m */,
+				108F3D77197004C10087DEF8 /* OSC_Abs.h */,
+				108F3D78197004C10087DEF8 /* OSC_Abs.m */,
+				108F3D7A197007A10087DEF8 /* OSC_Biceps.h */,
+				108F3D7B197007A10087DEF8 /* OSC_Biceps.m */,
+				108F3D7D19700AAD0087DEF8 /* OSC_Cycling.h */,
+				108F3D7E19700AAD0087DEF8 /* OSC_Cycling.m */,
+				108F3D8019700DBF0087DEF8 /* OSC_Footing.h */,
+				108F3D8119700DBF0087DEF8 /* OSC_Footing.m */,
+				108F3D8319700F690087DEF8 /* OSC_Pullups.h */,
+				108F3D8419700F690087DEF8 /* OSC_Pullups.m */,
+				108F3D86197011B90087DEF8 /* OSC_Pushups.h */,
+				108F3D87197011B90087DEF8 /* OSC_Pushups.m */,
+				108F3D89197012310087DEF8 /* OSC_SkippingRope.h */,
+				108F3D8A197012310087DEF8 /* OSC_SkippingRope.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +351,7 @@
 		10A85E54196E75B00066BF34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = osc_;
+				CLASSPREFIX = OSC_;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "MAC-04";
 				TargetAttributes = {
@@ -250,8 +405,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108F3D8F197015A90087DEF8 /* OSC_StatisticsManager.m in Sources */,
+				108F3D8B197012310087DEF8 /* OSC_SkippingRope.m in Sources */,
+				108F3D6D196FC4DB0087DEF8 /* OSC_Error.m in Sources */,
+				108F3D8519700F690087DEF8 /* OSC_Pullups.m in Sources */,
+				108F3D7F19700AAD0087DEF8 /* OSC_Cycling.m in Sources */,
+				10A85E9B196E804F0066BF34 /* OSC_User.m in Sources */,
+				108F3D88197011B90087DEF8 /* OSC_Pushups.m in Sources */,
+				10A85E9E196E889C0066BF34 /* OSC_Plan.m in Sources */,
+				108F3D7C197007A10087DEF8 /* OSC_Biceps.m in Sources */,
+				10A85F0E196EB2120066BF34 /* OSC_UserManager.m in Sources */,
 				10A85E70196E75B00066BF34 /* osc_AppDelegate.m in Sources */,
 				10A85E76196E75B00066BF34 /* osc_ViewController.m in Sources */,
+				108F3D8219700DBF0087DEF8 /* OSC_Footing.m in Sources */,
+				108F3D79197004C10087DEF8 /* OSC_Abs.m in Sources */,
+				10A85EA4196E93B50066BF34 /* OSC_Statistics.m in Sources */,
+				108F3D75196FE2370087DEF8 /* OSC_ActivityManager.m in Sources */,
+				108F3D71196FD1AD0087DEF8 /* OSC_PlanManager.m in Sources */,
 				10A85E6C196E75B00066BF34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +547,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ParsePlatform-LoginAndSignUpTutorial-0710943",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FitApp/FitApp-Prefix.pch";
 				INFOPLIST_FILE = "FitApp/FitApp-Info.plist";
@@ -390,6 +566,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ParsePlatform-LoginAndSignUpTutorial-0710943",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FitApp/FitApp-Prefix.pch";
 				INFOPLIST_FILE = "FitApp/FitApp-Info.plist";
@@ -457,6 +639,7 @@
 				10A85E90196E75B00066BF34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10A85E91196E75B00066BF34 /* Build configuration list for PBXNativeTarget "FitAppTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +648,7 @@
 				10A85E93196E75B00066BF34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OSC_UserManager.h"
+#import <Parse/Parse.h>
 
 @interface osc_ViewController : UIViewController
+
+@property OSC_UserManager *usermanager;
+
 
 @end

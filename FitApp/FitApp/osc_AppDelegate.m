@@ -7,12 +7,39 @@
 //
 
 #import "osc_AppDelegate.h"
+#import <Parse/Parse.h>
+#import "OSC_Plan.h"
+#import "OSC_Abs.h"
+#import "OSC_Statistics.h"
+#import "OSC_Biceps.h"
+#import "OSC_Cycling.h"
+#import "OSC_Footing.h"
+#import "OSC_Pullups.h"
+#import "OSC_Pushups.h"
+#import "OSC_SkippingRope.h"
 
 @implementation osc_AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [OSC_Plan registerSubclass];
+    [OSC_Abs registerSubclass];
+    [OSC_Biceps registerSubclass];
+    [OSC_Cycling registerSubclass];
+    [OSC_Pushups registerSubclass];
+    [OSC_Footing registerSubclass];
+    [OSC_Pullups registerSubclass];
+    [OSC_Statistics registerSubclass];
+    [OSC_SkippingRope registerSubclass];
+
+
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"NV15auAZTcAdcUuQ9MXb634Fzvhh8VhkmSAEz0Rg"
+                  clientKey:@"Nqba8UMBISsw75B2KVMyK8IEWZtHgEHbtJMIZXHe"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 							
