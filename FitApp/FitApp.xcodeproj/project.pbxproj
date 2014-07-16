@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		108F3D6D196FC4DB0087DEF8 /* OSC_Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D6C196FC4DB0087DEF8 /* OSC_Error.m */; };
 		108F3D71196FD1AD0087DEF8 /* OSC_PlanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D70196FD1AD0087DEF8 /* OSC_PlanManager.m */; };
 		108F3D75196FE2370087DEF8 /* OSC_ActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D74196FE2370087DEF8 /* OSC_ActivityManager.m */; };
 		108F3D79197004C10087DEF8 /* OSC_Abs.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D78197004C10087DEF8 /* OSC_Abs.m */; };
@@ -59,8 +58,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		108F3D6B196FC4DB0087DEF8 /* OSC_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_Error.h; sourceTree = "<group>"; };
-		108F3D6C196FC4DB0087DEF8 /* OSC_Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_Error.m; sourceTree = "<group>"; };
 		108F3D6E196FD0940087DEF8 /* OSC_IPlanManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSC_IPlanManager.h; sourceTree = "<group>"; };
 		108F3D6F196FD1AD0087DEF8 /* OSC_PlanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_PlanManager.h; sourceTree = "<group>"; };
 		108F3D70196FD1AD0087DEF8 /* OSC_PlanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_PlanManager.m; sourceTree = "<group>"; };
@@ -161,8 +158,6 @@
 		108F3D6A196FC4BE0087DEF8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				108F3D6B196FC4DB0087DEF8 /* OSC_Error.h */,
-				108F3D6C196FC4DB0087DEF8 /* OSC_Error.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -212,8 +207,7 @@
 			children = (
 				108F3D6A196FC4BE0087DEF8 /* Utilities */,
 				10A85E98196E7F7C0066BF34 /* Model */,
-				10A85E95196E76180066BF34 /* DAO */,
-				10A85E94196E76070066BF34 /* Services */,
+				10A85E95196E76180066BF34 /* DAL */,
 				10A85E6E196E75B00066BF34 /* osc_AppDelegate.h */,
 				10A85E6F196E75B00066BF34 /* osc_AppDelegate.m */,
 				10A85E71196E75B00066BF34 /* Main.storyboard */,
@@ -254,14 +248,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		10A85E94196E76070066BF34 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Services;
-			sourceTree = "<group>";
-		};
-		10A85E95196E76180066BF34 /* DAO */ = {
+		10A85E95196E76180066BF34 /* DAL */ = {
 			isa = PBXGroup;
 			children = (
 				10A85E97196E7A090066BF34 /* OSC_IUserManager.h */,
@@ -277,7 +264,7 @@
 				108F3D8D197015A90087DEF8 /* OSC_StatisticsManager.h */,
 				108F3D8E197015A90087DEF8 /* OSC_StatisticsManager.m */,
 			);
-			name = DAO;
+			name = DAL;
 			sourceTree = "<group>";
 		};
 		10A85E98196E7F7C0066BF34 /* Model */ = {
@@ -355,6 +342,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "MAC-04";
 				TargetAttributes = {
+					10A85E5B196E75B00066BF34 = {
+						DevelopmentTeam = D3K486RJ4U;
+					};
 					10A85E7C196E75B00066BF34 = {
 						TestTargetID = 10A85E5B196E75B00066BF34;
 					};
@@ -407,7 +397,6 @@
 			files = (
 				108F3D8F197015A90087DEF8 /* OSC_StatisticsManager.m in Sources */,
 				108F3D8B197012310087DEF8 /* OSC_SkippingRope.m in Sources */,
-				108F3D6D196FC4DB0087DEF8 /* OSC_Error.m in Sources */,
 				108F3D8519700F690087DEF8 /* OSC_Pullups.m in Sources */,
 				108F3D7F19700AAD0087DEF8 /* OSC_Cycling.m in Sources */,
 				10A85E9B196E804F0066BF34 /* OSC_User.m in Sources */,
@@ -556,7 +545,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FitApp/FitApp-Prefix.pch";
 				INFOPLIST_FILE = "FitApp/FitApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -575,7 +566,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FitApp/FitApp-Prefix.pch";
 				INFOPLIST_FILE = "FitApp/FitApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -8,13 +8,11 @@
 
 #import "OSC_PlanManager.h"
 
-#import "OSC_Error.h"
 #import <Parse/Parse.h>
 
 
 @implementation OSC_PlanManager
 
-@synthesize e;
 
 
 //************Get Plan By ID ****************
@@ -28,7 +26,7 @@
     
     @try {
         
-        NSException *ex = [NSException exceptionWithName:@"RetrievingPlanException" reason:@"Error retrieving plan !" userInfo:nil];
+      //  NSException *ex = [NSException exceptionWithName:@"RetrievingPlanException" reason:@"Error retrieving plan !" userInfo:nil];
       //Get the plan
         PFObject *obj = [query getObjectWithId:idplan];
         OSC_Plan *p = obj;

@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "OSC_IPlanManager.h"
-#import "OSC_Error.h"
+
 #import <Parse/Parse.h>
 
 @interface OSC_PlanManager : NSObject <OSC_IPlanManager>
 
-@property OSC_Error *e;
 
 
 //-(OSC_Plan*)getAllPlans:(PFUser*)user;

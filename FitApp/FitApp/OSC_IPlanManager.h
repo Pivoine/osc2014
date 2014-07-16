@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "OSC_Plan.h"
-#import "OSC_Error.h"
 #import <Parse/Parse.h>
 
 @protocol OSC_IPlanManager <NSObject>

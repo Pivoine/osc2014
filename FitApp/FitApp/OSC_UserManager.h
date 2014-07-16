@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 #import "OSC_IUserManager.h"
-#import "OSC_Error.h"
+
 
 @interface OSC_UserManager : NSObject <OSC_IUserManager>
 

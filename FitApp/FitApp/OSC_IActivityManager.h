@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
-#import "OSC_Activity.h"
 
 @protocol OSC_IActivityManager <NSObject>
 

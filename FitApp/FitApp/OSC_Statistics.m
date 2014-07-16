@@ -11,23 +11,25 @@
 
 @implementation OSC_Statistics
 
-@dynamic id, date, distance, speed, calories, idUser;
+@dynamic id, date, distance, speed, calories, id_user,steps;
 
 
 
 //****************** Constructor *****************
 
 -(id)initWithDate:(NSString*)adate
-      AndDistance:(double*)adistance
-         AndSpeed:(double*)aspeed
-      AndCalories:(double*)acalories
-        AndIdUser:(NSString*)aiduser{
+      AndDistance:(NSNumber*)adistance
+         AndSpeed:(NSNumber*)aspeed
+        AndCalories:(NSNumber*)acalories
+         AndSteps:(NSNumber*)asteps
+        AndUser:(PFUser*)auser{
     
     self.date = adate;
     self.distance = adistance;
     self.speed = aspeed;
+    self.steps = asteps;
     self.calories = acalories;
-    self.idUser = aiduser;
+    self.id_user = auser;
     return self;
 }
 

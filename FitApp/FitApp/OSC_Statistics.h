@@ -11,22 +11,24 @@
 
 @interface OSC_Statistics : PFObject <PFSubclassing>
 
-@property (retain) NSString *id;
-@property (retain) NSString *date;
-@property double *distance;
-@property double *speed;
-@property double *calories;
-@property (retain) NSString *idUser;
+@property NSString *id;
+@property NSString *date;
+@property NSNumber *distance;
+@property NSNumber *speed;
+@property NSNumber *steps;
+@property NSNumber *calories;
+@property PFUser *id_user;
 
 
 
 //****************** Constructor *****************
 
 -(id)initWithDate:(NSString*)adate
-                AndDistance:(double*)adistance
-                AndSpeed:(double*)aspeed
-                AndCalories:(double*)acalories
-                AndIdUser:(NSString*)aiduser;
+      AndDistance:(NSNumber*)adistance
+         AndSpeed:(NSNumber*)aspeed
+      AndCalories:(NSNumber*)acalories
+         AndSteps:(NSNumber*)asteps
+        AndUser:(PFUser*)auser;
 
 //****************** Subclassing Methods *****************
 
