@@ -20,8 +20,8 @@
 
 - (id)initWithName:(NSString*)aname
            AndDate:(NSString*)adate
-     AndIsNotified:(Boolean*)aisnotified
-         AndPeriod:(int*)aperiod
+     AndIsNotified:(BOOL)aisnotified
+         AndPeriod:(int)aperiod
            AndUser:(PFUser*)auser{
     
     
@@ -38,7 +38,7 @@
 //****************** Subclassing Methods *****************
 
 + (NSString *)parseClassName{
-    return @"OSC_Plan";
+    return @"Plan";
 }
 
 @end

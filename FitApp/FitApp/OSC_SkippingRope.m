@@ -34,7 +34,11 @@
 //****************** Subclassing Methods *****************
 
 + (NSString *)parseClassName{
-    return @"OSC_SkippingRope";
+    return @"Skipping_rope";
+}
+//****************** ToString *****************
+- (NSString *)description {
+    return @"skippingrope";
 }
 
 @end

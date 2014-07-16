@@ -12,26 +12,31 @@
 
 @interface OSC_Abs : PFObject <PFSubclassing> 
 
-@property (retain) NSString *id;
-@property int *order_activity;
-@property Boolean *isdone;
-@property (retain) NSString *done_date;
-@property (retain) NSString *id_plan;
-@property int *series;
+@property NSString *id;
+@property int order_activity;
+@property BOOL isdone;
+@property NSString *done_date;
+@property NSString *id_plan;
+@property int series;
 
 
 
 //****************** Constructor *****************
 
-- (id)initWithOrder:(int*)aorder
-          AndIsDone:(Boolean*)aisdone
+- (id)initWithOrder:(int)aorder
+          AndIsDone:(BOOL)aisdone
         AndDoneDate:(NSString*)adonedate
           AndIdPlan:(NSString*)aidplan
-          AndSeries:(int*)aseries;
+          AndSeries:(int)aseries;
 
 //****************** Subclassing Methods *****************
 
 + (NSString *)parseClassName;
+
+
+//****************** ToString *****************
+
+- (NSString *)description;
 
 @end
 

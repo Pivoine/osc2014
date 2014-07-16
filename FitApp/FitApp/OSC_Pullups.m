@@ -34,7 +34,12 @@
 //****************** Subclassing Methods *****************
 
 + (NSString *)parseClassName{
-    return @"OSC_Pullups";
+    return @"Pullups";
+}
+
+//****************** ToString *****************
+- (NSString *)description {
+    return @"pullups";
 }
 
 @end

@@ -12,10 +12,9 @@
 
 @protocol OSC_IUserManager
 
--(PFUser*)getUserById:(NSString*)iduser;
--(OSC_Error*)saveUser:(PFUser*) user;
--(OSC_Error*)updateUser:(PFUser*) user;
--(OSC_Error*)deleteUser:(NSString*) iduser;
+
+-(void)saveUser:(PFUser*) user;
+-(PFUser*)getcurrentUser;
 
 @end
 

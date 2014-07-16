@@ -7,16 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 #import "OSC_Activity.h"
 
 @protocol OSC_IActivityManager <NSObject>
 
--(OSC_Activity*)getActivityById:(NSString*)idactivity
-                                (NSString*)nameactivity;
--(OSC_Error*)saveActivity:(OSC_Activity*)activity;
--(OSC_Error*)updateActivity:(PFUser*) activity;
--(OSC_Error*)deleteActivity:(NSString*) idactivity;
-
+-(NSArray*)getAllActivities;
+-(void)saveActivity:(PFObject*)activity;
+-(void)deleteActivity:(NSString*) idactivity;
 
 @end
 

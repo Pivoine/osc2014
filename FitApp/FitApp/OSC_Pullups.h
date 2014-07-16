@@ -33,5 +33,9 @@
 
 + (NSString *)parseClassName;
 
+//****************** ToString *****************
+
+- (NSString *)description;
+
 @end
 

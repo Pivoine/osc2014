@@ -10,11 +10,19 @@
 
 @implementation OSC_StatisticsManager
 
+
+//**************** GET LATEST STATISTICS ***********
 -(OSC_Statistics*)getStatistics:(NSString*)iduser{
     
+    
+    return nil;
 }
--(OSC_Error*)saveStatistics:(OSC_Statistics*) statistics{
 
+//**************** SAVE STATISTICS ***********
+-(OSC_Error*)saveStatistics:(OSC_Statistics*) statistics{
+    
+    
+    return nil;
 }
 
 @end

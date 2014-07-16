@@ -7,15 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OSC_Activity.h"
-#import "OSC_Error.h"
+#import <Parse/Parse.h>
+#import "OSC_IActivityManager.h"
+#import "OSC_Abs.h"
+#import "OSC_Cycling.h"
+#import "OSC_Footing.h"
+#import "OSC_Pullups.h"
+#import "OSC_Pushups.h"
+#import "OSC_SkippingRope.h"
 
-@interface OSC_ActivityManager : NSObject
 
--(OSC_Activity*)getActivityById:(NSString*)idactivity
-                        AndName:(NSString*)nameactivity;
--(OSC_Error*)saveActivity:(OSC_Activity*)activity;
--(OSC_Error*)updateActivity:(PFUser*) activity;
--(OSC_Error*)deleteActivity:(NSString*) idactivity;
+@interface OSC_ActivityManager : NSObject <OSC_IActivityManager>
+
+-(NSArray*)getAllActivities;
+
+-(void)saveActivity:(PFObject*)activity;
+-(void)deleteActivity:(NSString*) activity;
+
+-(int)getActivityCode:(NSString*)activity;
 
 @end

@@ -16,11 +16,11 @@
 
 //****************** Constructor *****************
 
-- (id)initWithOrder:(int*)aorder
-          AndIsDone:(Boolean*)aisdone
+- (id)initWithOrder:(int)aorder
+          AndIsDone:(BOOL)aisdone
         AndDoneDate:(NSString*)adonedate
           AndIdPlan:(NSString*)aidplan
-          AndSeries:(int*)aseries{
+          AndSeries:(int)aseries{
     
     self.order_activity = aorder;
     self.isdone = aisdone;
@@ -34,7 +34,12 @@
 //****************** Subclassing Methods *****************
 
 + (NSString *)parseClassName{
-    return @"OSC_Abs";
+    return @"Abs";
+}
+
+//****************** ToString *****************
+- (NSString *)description {
+    return @"abs";
 }
 
 @end

@@ -7,108 +7,91 @@
 //
 
 #import "OSC_PlanManager.h"
+
 #import "OSC_Error.h"
+#import <Parse/Parse.h>
 
 
 @implementation OSC_PlanManager
+
+@synthesize e;
 
 
 //************Get Plan By ID ****************
 
 -(OSC_Plan*)getPlanById:(NSString*)idplan{
     
-    //Create an error object
-    OSC_Error *e = [[OSC_Error alloc] init];
-    e.error = FALSE;
     
-    //Get the plan
-    OSC_Plan *plan = [OSC_Plan new];
-    PFQuery *query = [PFQuery queryWithClassName:@"Plan"];
-    [query getObjectInBackgroundWithId:idplan block:^(PFObject *plan, NSError *error) {
-        e.error = TRUE;
-        e.message = error.description;
-    }];
+    OSC_Plan *plan = [OSC_Plan object];
+    PFQuery *query = [OSC_Plan query];
     
+    
+    @try {
+        
+        NSException *ex = [NSException exceptionWithName:@"RetrievingPlanException" reason:@"Error retrieving plan !" userInfo:nil];
+      //Get the plan
+        PFObject *obj = [query getObjectWithId:idplan];
+        OSC_Plan *p = obj;
+        plan.name = p.name;
+        plan.objectId = p.objectId;
+        plan.period = p.period;
+        plan.isnotified = p.isnotified;
+        plan.date = p.date;
+        plan.user = p.user;
+        
+    }
+    @catch (NSException *ex) {
+        @throw;
+    }
+    
+
     return plan;
+    
 
 }
 
-//************ Add Plan ****************
+//************ SAVE/UPDATE Plan ****************
 
--(OSC_Error*)savePlan:(OSC_Plan*)plan{
+-(void)savePlan:(OSC_Plan*)plan{
     
-    //Create an error object
-    OSC_Error *error = [[OSC_Error alloc] init];
-    error.error = FALSE;
-    
-    
-    @try{
-    //Add the plan
-        OSC_Plan *p = [OSC_Plan object];
-        p.date = plan.date;
-        p.name = plan.name;
-        p.isnotified = plan.isnotified;
-        p.period = plan.period;
-        p.user.objectId = plan.user.objectId;
-    }
-    @catch(NSException *e){
-        error.error = TRUE;
-        error.message = e.description;
-    }
-    
-    return error;
+    @try {
+        NSException *ex = [NSException exceptionWithName:@"SavingPlanException" reason:@"Error Saving Plan !" userInfo:nil];
+        [plan saveInBackgroundWithBlock: ^(BOOL succeeded, NSError *error) {
+            
+            if(error){
+                @throw ex;
+            }
+        }];
 
+
+    }
+    @catch (NSException *ex) {
+        @throw;
+  
+    }
 }
 
-//************ Update Plan ****************
+//************ Delete Plan By ID****************
 
--(OSC_Error*)updatePlan:(PFUser*) plan{
+-(void)deletePlan:(NSString*) idplan{
     
-    //Create an error object
-    OSC_Error *error = [[OSC_Error alloc] init];
-    error.error = FALSE;
+    
+    OSC_Plan *p = [self getPlanById:idplan];
     
     @try{
-        
-        //Update plan
-        [plan saveInBackground];
+        NSException *ex = [NSException exceptionWithName:@"DeletingPlanException" reason:@"Error Deleting User !" userInfo:nil];
+        [p deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if(error){
+                @throw ex;
+            }
+        }];
     }
-    @catch (NSException *e){
+    @catch (NSException *ex){
         
-        //Catch the error
-        error.error = TRUE;
-        error.message = e.description;
-    }
-    
-    
-    return error;
-
-}
-
-//************ Delete Plan ****************
-
--(OSC_Error*)deletePlan:(NSString*) idplan{
-    
-    OSC_Plan *p = [[OSC_Plan alloc] init];
-    p = [self getPlanById:idplan];
-    
-    //Create an error object
-    OSC_Error *error = [[OSC_Error alloc] init];
-    error.error = FALSE;
-    
-    @try{
-        
-        //Update user
-        [p deleteInBackground];
-    }
-    @catch (NSException *e){
-        
-        //Catch the error
-        error.error = TRUE;
-        error.message = e.description;
+        @throw;
     }
     
-    return error;
+    
 
     
 

@@ -36,7 +36,11 @@
 //****************** Subclassing Methods *****************
 
 + (NSString *)parseClassName{
-    return @"OSC_Footing";
+    return @"Footing";
 }
 
+//****************** ToString *****************
+- (NSString *)description {
+    return @"footing";
+}
 @end

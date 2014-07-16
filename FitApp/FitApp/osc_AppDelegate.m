@@ -23,6 +23,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+
+
+    // Override point for customization after application launch.
+    [Parse setApplicationId:@"NV15auAZTcAdcUuQ9MXb634Fzvhh8VhkmSAEz0Rg"
+                  clientKey:@"Nqba8UMBISsw75B2KVMyK8IEWZtHgEHbtJMIZXHe"];
+    
     [OSC_Plan registerSubclass];
     [OSC_Abs registerSubclass];
     [OSC_Biceps registerSubclass];
@@ -32,11 +38,6 @@
     [OSC_Pullups registerSubclass];
     [OSC_Statistics registerSubclass];
     [OSC_SkippingRope registerSubclass];
-
-
-    // Override point for customization after application launch.
-    [Parse setApplicationId:@"NV15auAZTcAdcUuQ9MXb634Fzvhh8VhkmSAEz0Rg"
-                  clientKey:@"Nqba8UMBISsw75B2KVMyK8IEWZtHgEHbtJMIZXHe"];
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     

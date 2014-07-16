@@ -9,12 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "OSC_IPlanManager.h"
 #import "OSC_Error.h"
+#import <Parse/Parse.h>
 
 @interface OSC_PlanManager : NSObject <OSC_IPlanManager>
 
+@property OSC_Error *e;
+
+
+//-(OSC_Plan*)getAllPlans:(PFUser*)user;
 -(OSC_Plan*)getPlanById:(NSString*)idplan;
--(OSC_Error*)savePlan:(OSC_Plan*)plan;
--(OSC_Error*)updatePlan:(PFUser*) plan;
--(OSC_Error*)deletePlan:(NSString*) idplan;
+-(void)savePlan:(OSC_Plan*)plan;
+-(void)deletePlan:(NSString*) idplan;
 
 @end

@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 #import "OSC_Statistics.h"
 
 @protocol OSC_IStatisticsManager <NSObject>
 
--(OSC_Statistics*)getStatistics:(NSString*)iduser;
--(OSC_Error*)saveStatistics:(OSC_Statistics*) statistics;
+-(OSC_Statistics*)getStatistics:(PFUser*)user;
+-(void)saveStatistics:(OSC_Statistics*) statistics;
 
 
 @end

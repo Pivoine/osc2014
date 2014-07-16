@@ -36,7 +36,12 @@
 //****************** Subclassing Methods *****************
 
 + (NSString *)parseClassName{
-    return @"OSC_Cycling";
+    return @"Cycling";
+}
+
+//****************** ToString *****************
+- (NSString *)description {
+    return @"cycling";
 }
 
 @end

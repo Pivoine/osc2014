@@ -12,11 +12,11 @@
 
 @interface OSC_Plan : PFObject <PFSubclassing>
 
-@property (retain) NSString *id;
-@property (retain) NSString *name;
-@property (retain) NSString *date;
-@property Boolean *isnotified;
-@property int *period;
+@property NSString *id;
+@property NSString *name;
+@property NSString *date;
+@property BOOL isnotified;
+@property int period;
 @property PFUser *user;
 
 
@@ -25,8 +25,8 @@
 
 - (id)initWithName:(NSString*)aname
                 AndDate:(NSString*)adate
-                AndIsNotified:(Boolean*)aisnotified
-                AndPeriod:(int*)aperiod
+                AndIsNotified:(BOOL)aisnotified
+                AndPeriod:(int)aperiod
                 AndUser:(PFUser*)auser;
 
 //****************** Subclassing Methods *****************

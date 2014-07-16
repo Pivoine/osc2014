@@ -35,7 +35,7 @@
 //****************** Subclassing Methods *****************
 
 + (NSString *)parseClassName{
-    return @"OSC_Statistics";
+    return @"Statistics";
 }
 
 @end

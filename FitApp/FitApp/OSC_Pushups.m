@@ -34,7 +34,12 @@ AndSeries:(NSMutableArray*)aseries{
 //****************** Subclassing Methods *****************
 
 + (NSString *)parseClassName{
-    return @"OSC_Pushups";
+    return @"Pushups";
+}
+
+//****************** ToString *****************
+- (NSString *)description {
+    return @"pushups";
 }
 
 @end
