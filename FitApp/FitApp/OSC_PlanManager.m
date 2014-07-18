@@ -29,7 +29,7 @@
       //  NSException *ex = [NSException exceptionWithName:@"RetrievingPlanException" reason:@"Error retrieving plan !" userInfo:nil];
       //Get the plan
         PFObject *obj = [query getObjectWithId:idplan];
-        OSC_Plan *p = obj;
+        OSC_Plan *p = (OSC_Plan*)obj;
         plan.name = p.name;
         plan.objectId = p.objectId;
         plan.period = p.period;

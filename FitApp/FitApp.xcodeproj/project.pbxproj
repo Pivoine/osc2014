@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101A24381979016E00445754 /* fit.png in Resources */ = {isa = PBXBuildFile; fileRef = 101A24371979016E00445754 /* fit.png */; };
+		101A244B197913D800445754 /* abs.png in Resources */ = {isa = PBXBuildFile; fileRef = 101A2445197913D800445754 /* abs.png */; };
+		101A244C197913D800445754 /* cycling.png in Resources */ = {isa = PBXBuildFile; fileRef = 101A2446197913D800445754 /* cycling.png */; };
+		101A244D197913D800445754 /* footing.png in Resources */ = {isa = PBXBuildFile; fileRef = 101A2447197913D800445754 /* footing.png */; };
+		101A244E197913D800445754 /* pullups.png in Resources */ = {isa = PBXBuildFile; fileRef = 101A2448197913D800445754 /* pullups.png */; };
+		101A244F197913D800445754 /* pushups.png in Resources */ = {isa = PBXBuildFile; fileRef = 101A2449197913D800445754 /* pushups.png */; };
+		101A2450197913D800445754 /* skippingrope.png in Resources */ = {isa = PBXBuildFile; fileRef = 101A244A197913D800445754 /* skippingrope.png */; };
 		108F3D71196FD1AD0087DEF8 /* OSC_PlanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D70196FD1AD0087DEF8 /* OSC_PlanManager.m */; };
 		108F3D75196FE2370087DEF8 /* OSC_ActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D74196FE2370087DEF8 /* OSC_ActivityManager.m */; };
 		108F3D79197004C10087DEF8 /* OSC_Abs.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D78197004C10087DEF8 /* OSC_Abs.m */; };
@@ -17,6 +24,7 @@
 		108F3D88197011B90087DEF8 /* OSC_Pushups.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D87197011B90087DEF8 /* OSC_Pushups.m */; };
 		108F3D8B197012310087DEF8 /* OSC_SkippingRope.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D8A197012310087DEF8 /* OSC_SkippingRope.m */; };
 		108F3D8F197015A90087DEF8 /* OSC_StatisticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3D8E197015A90087DEF8 /* OSC_StatisticsManager.m */; };
+		109296C51977ABA2006B6C3A /* OSC_PickerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 109296C41977ABA2006B6C3A /* OSC_PickerDataSource.m */; };
 		10A85E60196E75B00066BF34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85E5F196E75B00066BF34 /* Foundation.framework */; };
 		10A85E62196E75B00066BF34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85E61196E75B00066BF34 /* CoreGraphics.framework */; };
 		10A85E64196E75B00066BF34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A85E63196E75B00066BF34 /* UIKit.framework */; };
@@ -58,6 +66,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		101A24371979016E00445754 /* fit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fit.png; sourceTree = "<group>"; };
+		101A2445197913D800445754 /* abs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abs.png; sourceTree = "<group>"; };
+		101A2446197913D800445754 /* cycling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycling.png; sourceTree = "<group>"; };
+		101A2447197913D800445754 /* footing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footing.png; sourceTree = "<group>"; };
+		101A2448197913D800445754 /* pullups.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pullups.png; sourceTree = "<group>"; };
+		101A2449197913D800445754 /* pushups.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushups.png; sourceTree = "<group>"; };
+		101A244A197913D800445754 /* skippingrope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skippingrope.png; sourceTree = "<group>"; };
 		108F3D6E196FD0940087DEF8 /* OSC_IPlanManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSC_IPlanManager.h; sourceTree = "<group>"; };
 		108F3D6F196FD1AD0087DEF8 /* OSC_PlanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_PlanManager.h; sourceTree = "<group>"; };
 		108F3D70196FD1AD0087DEF8 /* OSC_PlanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_PlanManager.m; sourceTree = "<group>"; };
@@ -81,6 +96,9 @@
 		108F3D8C197014EB0087DEF8 /* OSC_IStatisticsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSC_IStatisticsManager.h; sourceTree = "<group>"; };
 		108F3D8D197015A90087DEF8 /* OSC_StatisticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_StatisticsManager.h; sourceTree = "<group>"; };
 		108F3D8E197015A90087DEF8 /* OSC_StatisticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_StatisticsManager.m; sourceTree = "<group>"; };
+		109296C21977A980006B6C3A /* strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strings.h; sourceTree = "<group>"; };
+		109296C31977ABA2006B6C3A /* OSC_PickerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSC_PickerDataSource.h; sourceTree = "<group>"; };
+		109296C41977ABA2006B6C3A /* OSC_PickerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSC_PickerDataSource.m; sourceTree = "<group>"; };
 		10A85E5C196E75B00066BF34 /* FitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A85E5F196E75B00066BF34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10A85E61196E75B00066BF34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,11 +173,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101A24341978FCB100445754 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				101A2445197913D800445754 /* abs.png */,
+				101A2446197913D800445754 /* cycling.png */,
+				101A2447197913D800445754 /* footing.png */,
+				101A2448197913D800445754 /* pullups.png */,
+				101A2449197913D800445754 /* pushups.png */,
+				101A244A197913D800445754 /* skippingrope.png */,
+				101A24371979016E00445754 /* fit.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		108F3D6A196FC4BE0087DEF8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				109296C31977ABA2006B6C3A /* OSC_PickerDataSource.h */,
+				109296C41977ABA2006B6C3A /* OSC_PickerDataSource.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		109296C11977A96F006B6C3A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				109296C21977A980006B6C3A /* strings.h */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 		10A85E53196E75B00066BF34 = {
@@ -205,6 +247,8 @@
 		10A85E65196E75B00066BF34 /* FitApp */ = {
 			isa = PBXGroup;
 			children = (
+				101A24341978FCB100445754 /* Images */,
+				109296C11977A96F006B6C3A /* Constants */,
 				108F3D6A196FC4BE0087DEF8 /* Utilities */,
 				10A85E98196E7F7C0066BF34 /* Model */,
 				10A85E95196E76180066BF34 /* DAL */,
@@ -375,7 +419,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A85E78196E75B00066BF34 /* Images.xcassets in Resources */,
+				101A24381979016E00445754 /* fit.png in Resources */,
+				101A244B197913D800445754 /* abs.png in Resources */,
+				101A244E197913D800445754 /* pullups.png in Resources */,
+				101A2450197913D800445754 /* skippingrope.png in Resources */,
+				101A244C197913D800445754 /* cycling.png in Resources */,
 				10A85E6A196E75B00066BF34 /* InfoPlist.strings in Resources */,
+				101A244F197913D800445754 /* pushups.png in Resources */,
+				101A244D197913D800445754 /* footing.png in Resources */,
 				10A85E73196E75B00066BF34 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +462,7 @@
 				10A85EA4196E93B50066BF34 /* OSC_Statistics.m in Sources */,
 				108F3D75196FE2370087DEF8 /* OSC_ActivityManager.m in Sources */,
 				108F3D71196FD1AD0087DEF8 /* OSC_PlanManager.m in Sources */,
+				109296C51977ABA2006B6C3A /* OSC_PickerDataSource.m in Sources */,
 				10A85E6C196E75B00066BF34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
